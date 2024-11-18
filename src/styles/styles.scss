@@ -1,0 +1,75 @@
+@use './variables';
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: variables.$grey-900;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92svh;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$grey-800;
+    border-radius: 20px;
+    height: 610px;
+    width: 384px;
+    &__user-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        margin: 0 0 26px;
+    }
+    &__links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+}
+
+.user-profile {
+    &__profile-photo {
+        border-radius: 50%;
+        height: 94px;
+        width: 94px;
+    }
+}
+
+.links-container__link-item {
+    border-radius: 10px;
+    background-color: variables.$grey-700;
+    text-align: center;
+    align-content: center;
+    height: 46px;
+    width: 304px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: variables.$white;
+    height: 8svh;
+    a {
+        color: variables.$link;
+    }
+}

@@ -1,3 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92svh;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 20px;
+  height: 610px;
+  width: 384px;
+}
+.profile-container__user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  margin: 0 0 26px;
+}
+.profile-container__links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.user-profile__profile-photo {
+  border-radius: 50%;
+  height: 94px;
+  width: 94px;
+}
+
+.links-container__link-item {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+  text-align: center;
+  align-content: center;
+  height: 46px;
+  width: 304px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  height: 8svh;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
 
 /*# sourceMappingURL=styles.css.map */
