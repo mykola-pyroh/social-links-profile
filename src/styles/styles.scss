@@ -1,7 +1,10 @@
+@use './fonts';
 @use './variables';
 
 * {
     box-sizing: border-box;
+    font-family: "Inter Regular";
+    font-weight: normal;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -26,6 +29,7 @@ main {
     justify-content: center;
     background-color: variables.$grey-800;
     border-radius: 20px;
+    padding: 40px;
     height: 610px;
     width: 384px;
     &__user-profile {
@@ -51,6 +55,26 @@ main {
         height: 94px;
         width: 94px;
     }
+    &__user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        h1 {
+            font-family: 'Inter Bold';
+            font-size: 20px;
+            color: variables.$white;
+        }
+        h2 {
+            font-family: 'Inter Semibold';
+            font-size: 12px;
+            color: variables.$green;
+        }
+    }
+    &__user-position {
+        color: variables.$white;
+    }
 }
 
 .links-container__link-item {
@@ -58,8 +82,15 @@ main {
     background-color: variables.$grey-700;
     text-align: center;
     align-content: center;
+    color: variables.$white;
+    font-family: 'Inter Semibold';
+    text-decoration: none;
     height: 46px;
     width: 304px;
+    &:hover{
+        color: variables.$grey-800;
+        background-color: variables.$green;
+    }
 }
 
 footer {
@@ -71,5 +102,8 @@ footer {
     height: 8svh;
     a {
         color: variables.$link;
+        &:hover {
+            color: variables.$green;
+        }
     }
 }
